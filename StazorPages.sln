@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StazorPages", "StazorPages\StazorPages.csproj", "{BEA55B25-1D0D-4707-B4AD-EC953B0CE33E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEA55B25-1D0D-4707-B4AD-EC953B0CE33E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA55B25-1D0D-4707-B4AD-EC953B0CE33E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA55B25-1D0D-4707-B4AD-EC953B0CE33E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA55B25-1D0D-4707-B4AD-EC953B0CE33E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABAF1832-93CC-4D95-A0C4-92E656145291}
+	EndGlobalSection
+EndGlobal

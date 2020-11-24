@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>Emmanuel Tissera</Authors>
+    <Description>Creates static HTML pages on the first request to an ASP.NET MVC project. Ideal for plugging in with a headless CMS or even another data source.</Description>
+    <Version>1.0.0-alpha.2</Version>
+    <PackageIcon>stazor-pages-icon.png</PackageIcon>
+    <PackageLicenseExpression>(MIT)</PackageLicenseExpression>
+    <Copyright>© Emmanuel Tissera</Copyright>
+    <PackageTags>Static HTML, Razor, MVC, Headless, CaaS</PackageTags>
+    <RepositoryUrl>https://github.com/emmanueltissera/stazorpages</RepositoryUrl>
+    <PackageProjectUrl>https://blog.emmti.com/p/stazor-pages.html</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>Initial Alpha Release</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="stazor-pages-icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
