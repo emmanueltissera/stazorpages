@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
@@ -12,6 +13,16 @@ namespace StazorPages.StazorFile
 
         public StazorFileDetector(IOptions<StazorFileOptions> options, IWebHostEnvironment env)
         {
+            if (options == null)
+            {
+                throw new ArgumentNullException(nameof(options));
+            }
+
+            if (env == null)
+            {
+                throw new ArgumentNullException(nameof(env));
+            }
+
             _staticFileOptions = options.Value;
             _hostingEnvironment = env;
         }

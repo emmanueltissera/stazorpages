@@ -46,5 +46,24 @@ namespace StazorPages.StazorFile
                 directory.Create();
             }
         }
+
+        public static void CleanStazorPageDirectory()
+        {
+            var directory = new DirectoryInfo(DefaultFilePaths.StazorPageDirectory);
+
+            if (!directory.Exists)
+            {
+                return;
+            }
+
+            foreach (var subDirectory in directory.GetDirectories())
+            {
+                subDirectory.Delete(true);
+            }
+            foreach (var file in directory.GetFiles())
+            {
+                file.Delete();
+            }
+        }
     }
 }

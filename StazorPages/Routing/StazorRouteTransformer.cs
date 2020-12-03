@@ -17,6 +17,16 @@ namespace StazorPages.Routing
 
         public StazorRouteTransformer(IContentService contentService, StazorFileDetector stazorFileDetector)
         {
+            if (contentService == null)
+            {
+                throw new ArgumentNullException(nameof(contentService));
+            }
+
+            if (stazorFileDetector == null)
+            {
+                throw new ArgumentNullException(nameof(stazorFileDetector));
+            }
+
             _contentService = contentService;
             _stazorFileDetector = stazorFileDetector;
         }
@@ -78,7 +88,7 @@ namespace StazorPages.Routing
             else
             {
                 filePath = filePath.Trim('/');
-                filePath = $"{filePath}/index.html";
+                filePath = $"{filePath}.html";
             }
 
             if (!_stazorFileDetector.FileExists($"/{filePath}"))

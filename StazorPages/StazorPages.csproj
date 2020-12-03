@@ -5,8 +5,8 @@
     <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Authors>Emmanuel Tissera</Authors>
-    <Description>Creates static HTML pages on the first request to an ASP.NET MVC project. Ideal for plugging in with a headless CMS or even another data source.</Description>
-    <Version>1.0.0-alpha.2</Version>
+    <Description>Creates static HTML pages on the first request to an ASP.NET MVC project. Ideal for plugging in with a headless CMS or other data source.</Description>
+    <Version>1.0.0-alpha.3</Version>
     <PackageIcon>stazor-pages-icon.png</PackageIcon>
     <PackageLicenseExpression>(MIT)</PackageLicenseExpression>
     <Copyright>© Emmanuel Tissera</Copyright>

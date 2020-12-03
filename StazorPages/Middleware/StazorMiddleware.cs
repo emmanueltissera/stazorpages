@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using StazorPages.Constants;
@@ -12,6 +13,11 @@ namespace StazorPages.Middleware
 
         public StazorMiddleware(RequestDelegate next)
         {
+            if (next == null)
+            {
+                throw new ArgumentNullException(nameof(next));
+            }
+
             _next = next;
         }
 
